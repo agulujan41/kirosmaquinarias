@@ -2,7 +2,7 @@ import { Box,Typography } from '@mui/material'
 import {Cursor,useTypewriter} from 'react-simple-typewriter'
 import MenuIcon from '@mui/icons-material/Menu';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import AgricultureIcon from '@mui/icons-material/Agriculture';
+//import AgricultureIcon from '@mui/icons-material/Agriculture';
 import CallIcon from '@mui/icons-material/Call';
 import React from 'react'
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   const [detailsTitle] =useTypewriter({
     words:['maquinarias'],
     loop:{},
-    typeSpeed:100,
+    typeSpeed:40,
     deleteSpeed:25
   })
   return (

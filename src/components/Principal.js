@@ -1,24 +1,44 @@
-import {Box} from "@mui/material"
 import React from 'react'
+import  {Box} from '@mui/material'
 import Carousel from "./utils/Carousel";
 import Navbar from "./utils/Navbar";
-import Searchbar from "./utils/Searchbar";
 const Principal = () => {
+  
   return (
+    
     <>
+      
       {/*NAVBAR*/ }
-      <Navbar/>
-      {/*SEARCHNBAR*/}
-      <Searchbar/>
-      <Box id="lit_body" sx={{
-        
-      }}>
-        <Carousel/>
-        
-      </Box>
+      <Navbar id='box_nav'/>
+      {/*MAIN*/}
+      <section id='main_section' class='hidden'> 
+        <Box id="lit_body" sx={{mt:11,
+        '@media (max-width:1000px)':{
+          mt:7
+        }
+      }}
+
+        >
+          <Carousel/>
+          
+        </Box>
+      </section>
+      <section class='hidden'> 
+        <div style={{height:'300vh'}}>
+
+        </div>
+      </section>
+
+      
+      
+       
+      
     </>
-   
-  )
+    
+  
+    
+   )
+
 }
 
 export default Principal
