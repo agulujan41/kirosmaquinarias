@@ -24,7 +24,7 @@ const Navbar = () => {
         gap:'20px',
         pl:6,
         alignItems:'center',
-        backgroundColor:'white',
+        backgroundColor:'black',
         pt:1,
         pb:1,
         position:'fixed',
@@ -38,7 +38,7 @@ const Navbar = () => {
 
       }} id="navbar" >
           <Box sx={{display:'flex',flexDirection:'row',gap:'15px',alignItems:'center'}}> 
-            <Box component="img" src="./logo.png" sx={{height:'60px',
+            <Box component="img" src="./logo-orange.jpg" sx={{height:'60px',
             '@media (max-width:1000px)':{
               height:'40px'
           }
@@ -57,21 +57,21 @@ const Navbar = () => {
               
             }}>
               <Typography sx={{fontFamily:"'Manrope', sans-serif" ,fontSize:'3.2em',fontWeight:'bold',fontStyle:'italic',alignSelf: 'bottom'
-              ,zIndex:150,'@media (max-width:1000px)':{
+              ,color:'orange',zIndex:150,'@media (max-width:1000px)':{
                 fontSize:'1.5em'
 
             }
             }}>KIRO</Typography>
               
               <Typography  sx={{fontFamily:"'Manrope', sans-serif" ,fontSize:'2.3em',fontStyle:'italic',fontWeight:'bold',alignSelf: 'bottom'
-              ,'@media (max-width:1000px)':{
+               ,color:'white','@media (max-width:1000px)':{
                 fontSize:'1.3em'
             }
             }}>{detailsTitle}</Typography>
             <Cursor cursorStyle=''>
             
             </Cursor>
-            <Box component='img' src='./maquinarias/logotractor.png' sx={{height:'45px'}}/>
+            <Box component='img' src='./yellow-tractor.png' sx={{height:'45px'}}/>
             </Box>
           </Box>
           
@@ -86,7 +86,7 @@ const Navbar = () => {
                   <Typography sx={{fontFamily:"'Manrope', sans-serif" }}>+54 9 387 543-6384</Typography>
               </Box>
               <Box sx={{display:'flex',flexDirection:'row',gap:'10px',pr:'10px',borderRight:'1px solid gray'}}>
-                  <WhatsAppIcon />
+                  <WhatsAppIcon sx={{color:'green'}}/>
                   <a href='https://wa.me/+543875436384' target='_blank' style={{fontFamily:"'Manrope', sans-serif" ,color:'black',textDecoration:'none',fontWeight:'normal'}}>+54 9 387 543-6384</a>
               </Box>
               <Box sx={{display:'flex',flexDirection:'row',gap:'10px',pr:'10px'}}>
@@ -94,7 +94,7 @@ const Navbar = () => {
               </Box>
             
           </Box>
-          <MenuIcon sx={{display:'none','@media (max-width:1000px)':{
+          <MenuIcon sx={{color:'orange',display:'none','@media (max-width:1000px)':{
               display:'flex',mr:2
           }}}/>
 
