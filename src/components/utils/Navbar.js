@@ -77,7 +77,7 @@ const Navbar = () => {
             </Box>
             
           </Box>
-          <Box class='navbar-box'>
+          <div class='navbar-box' id='navbar_box'>
             <nav>
               <ul>
                 <li>
@@ -98,8 +98,8 @@ const Navbar = () => {
                 </li>
               </ul>
             </nav>
-          </Box>
-          <MenuIcon id = 'menu_icon' sx={{color:'orange',display:'none',position:'fixed',cursor:'pointer','@media (max-width:1000px)':{
+          </div>
+          <MenuIcon id = 'menu_icon_button' sx={{color:'orange',display:'none',position:'fixed',cursor:'pointer','@media (max-width:1000px)':{
               display:'flex',mr:2,top:'20px',right:0
           }}}/>
           

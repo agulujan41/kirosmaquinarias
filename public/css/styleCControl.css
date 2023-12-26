@@ -3,7 +3,7 @@
 
 .hidden{
     opacity: 0;
-    transform:scale(0.8);
+    transform:scale(0.9);
     transition: all 2s;
     
 }
@@ -19,7 +19,7 @@ section{
 .neon {
     color: #fff;
     
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fc6500, 0 0 20px #e67b00, 0 0 25px #ffb11f, 0 0 30px #e69d00, 0 0 35px #e68200;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #bb4b01, 0 0 15px #e67b00, 0 0 15px #96660f, 0 0 15px #e69d00, 0 0 15px #e68200;
     font-family:'Manrope', sans-serif;
     font-style:italic;
     font-size:2.3em;
@@ -90,14 +90,16 @@ section{
     }
     .navbar-box ul{
         flex-direction: column;
-        justify-content: start;
-        align-items: left;
-        margin-left: 0;
-        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width:  max-content ;
         position: relative;
+        width: 100%;
         left: 0;
-      
         
+
     }
     .navbar-box a{
         text-transform: capitalize;
@@ -111,12 +113,13 @@ section{
 
     .navbar-box nav{
         align-items: left;
-     
+        width: 100%;
+        margin: 0;
     }
     .navbar-box li{
-       align-self: flex-start;
-       
+       border-bottom:1px solid orange;
        width: 100%;
+       
     }
     
 }
