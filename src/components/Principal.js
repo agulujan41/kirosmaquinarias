@@ -14,9 +14,9 @@ const Principal = () => {
       <Navbar id='box_nav'/>
       {/*MAIN*/}
       <section id='main_section' class='hidden'> 
-        <Box id="lit_body" sx={{mt:7,
+        <Box id="lit_body" sx={{mt:'90px',
         '@media (max-width:1000px)':{
-          mt:4
+          mt:'60px'
         }
       }}
 
@@ -25,7 +25,7 @@ const Principal = () => {
           
         </Box>
       </section>
-      <section class='hidden'> 
+      <section class='hiddenRight'> 
         <Box sx={{m:2,mr:11,ml:11,
           '@media (max-width:1000px)':{
             m:2
@@ -36,12 +36,12 @@ const Principal = () => {
           <Box component='img' src='./empresa.jpg' sx={{width:'100%'}}/>
         </Box>
         
-        <div style={{height:'300vh',backgroundColor:'white'}}>
+        
 
-        </div>
+      
       </section>
       <section>
-
+      <div style={{height:'300vh'}}></div>
       </section>
 
       

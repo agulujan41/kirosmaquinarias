@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@500&display=swap');
+
 .hidden{
     opacity: 0;
     transform:scale(0.8);
@@ -12,4 +15,108 @@
 section{
     margin:0;
     padding: 0;
+}
+.neon {
+    color: #fff;
+    
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fc6500, 0 0 20px #e67b00, 0 0 25px #ffb11f, 0 0 30px #e69d00, 0 0 35px #e68200;
+    font-family:'Manrope', sans-serif;
+    font-style:italic;
+    font-size:2.3em;
+    font-weight:bold;
+    align-self: bottom;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar-box{
+    background-color: black;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.navbar-box nav{
+    align-items: center;
+    height: 100%;
+    
+}
+.navbar-box ul{
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: space-between;
+    
+}
+.navbar-box li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;        
+    gap:10px;
+}
+.navbar-box a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    font-family: 'Manrope',sans-serif;
+    
+}
+.navbar-box span{
+    display:none;
+    color:orange;
+
+}
+@media  screen  and (max-width:1000px){
+    .neon{
+        font-size:1.3em;
+    }
+    .navbar-box{
+        position: fixed;
+        top:60px;
+        padding: 10px;
+        z-index: 120;
+        right: 0px;
+        margin-right: 0;
+        height: 100vh;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.884);
+        align-items: start;
+        
+    }
+    .navbar-box ul{
+        flex-direction: column;
+        justify-content: start;
+        align-items: left;
+        margin-left: 0;
+        width: 100%;
+        position: relative;
+        left: 0;
+      
+        
+    }
+    .navbar-box a{
+        text-transform: capitalize;
+        font-size: 1.1em;
+       
+    }
+    .navbar-box span{
+        display: flex;
+        font-size: 1.2em;
+    }
+
+    .navbar-box nav{
+        align-items: left;
+     
+    }
+    .navbar-box li{
+       align-self: flex-start;
+       
+       width: 100%;
+    }
+    
 }
