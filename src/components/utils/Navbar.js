@@ -1,9 +1,9 @@
 import { Box,Typography } from '@mui/material'
 import {Cursor,useTypewriter} from 'react-simple-typewriter'
 import MenuIcon from '@mui/icons-material/Menu';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+//import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 //import AgricultureIcon from '@mui/icons-material/Agriculture';
-import CallIcon from '@mui/icons-material/Call';
+//import CallIcon from '@mui/icons-material/Call';
 import React from 'react'
 
 const Navbar = () => {
@@ -82,19 +82,19 @@ const Navbar = () => {
               <ul>
                 <li>
                   <span>></span>
-                  <a href=''>Inicio</a>
+                  <a href='#main_section'>Inicio</a>
                 </li>
                 <li>
                   <span>></span>
-                  <a href=''>Tractores</a>
+                  <a href='#tractores'>Tractores</a>
                 </li>
                 <li>
                   <span>></span>
-                  <a href=''>Empresa</a>
+                  <a href='#empresa'>Empresa</a>
                 </li>
                 <li>
                   <span>></span>
-                  <a href=''>Contactanos</a>
+                  <a href='#contacto'>Contactanos</a>
                 </li>
               </ul>
             </nav>

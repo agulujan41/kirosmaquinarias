@@ -12,6 +12,21 @@ const observer = new IntersectionObserver((entries)=>{
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el)=>observer.observe(el));
 
+const observer2 = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show2');
+        }
+        else{
+            entry.target.classList.remove('show2');
+        }
+     });
+});
+
+const hiddenElements2 = document.querySelectorAll('.hidden2');
+hiddenElements2.forEach((el)=>observer2.observe(el));
+
+
 var menuActivated = false;
 var menu_icon_button = document.getElementById('menu_icon_button');
 var navbar_box = document.getElementById('navbar_box');
