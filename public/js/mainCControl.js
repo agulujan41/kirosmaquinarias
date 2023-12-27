@@ -34,7 +34,8 @@ loadMENU();
 menu_icon_button.onclick = function onClickedButton(){
     menuActivated= !menuActivated
     if (menuActivated){
-        navbar_box.style = 'display:flex;'
+        navbar_box.style = 'display:flex;transform:translateX(100%);transition:all 0.8s;'
+        navbar_box.style = 'transform:translateX(0%);transition:all 2s'
     }
     else{
         navbar_box.style = 'display:none';

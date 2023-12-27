@@ -31,7 +31,7 @@ section {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #bb4b01, 0 0 15px #e67b00,
     0 0 15px #96660f, 0 0 15px #e69d00, 0 0 15px #e68200;
   font-family: "Manrope", sans-serif;
-  font-style: oblique;
+  font-style: normal;
   font-size: 2.3em;
   font-weight: bold;
   align-self: bottom;
@@ -283,11 +283,11 @@ a {
     font-size: 1em;
   }
   .carousel {
-    height: 70vh;
+    height: 90vh;
 
   }
   .carousel img{
-    height: 70vh;
+    height: 90vh;
     object-fit: cover;
 
   }
@@ -323,4 +323,10 @@ a {
   .neon {
     font-size: 1em;
   }
+}
+@media (orientation: landscape) {
+  .container img{
+    width: 50%;
+    height: auto;
+  } 
 }
