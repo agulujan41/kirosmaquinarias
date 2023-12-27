@@ -61,13 +61,21 @@ const Navbar = () => {
               ,color:'orange',zIndex:150,'@media (max-width:1000px)':{
                 fontSize:'1.5em'
 
-            }
+            },
+            '@media (max-width:500px)':{
+              fontSize:'1.3em'
+
+          },
+
             }}>KIRO</Typography>
               
               <Typography sx={{fontFamily:"'Manrope', sans-serif" ,fontSize:'2.3em',fontStyle:'italic',fontWeight:'bold',alignSelf: 'bottom'
                ,color:'white','@media (max-width:1000px)':{
                 fontSize:'1.3em'
-            }
+            },
+            '@media (max-width:1000px)':{
+              fontSize:'1em'
+          }
             }}  class='neon'>{detailsTitle}</Typography>
             <Cursor cursorStyle=''>
             
