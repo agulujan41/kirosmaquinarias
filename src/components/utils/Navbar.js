@@ -39,7 +39,7 @@ const Navbar = () => {
       }} id="navbar" >
           
           <Box sx={{display:'flex',flexDirection:'row',gap:'15px',alignItems:'center'}}> 
-            <Box component="img" src="./logo-orange.jpg" sx={{height:'60px',
+            <Box component="img" src="./logo-orange.jpg" alt='' sx={{height:'60px',
             '@media (max-width:1000px)':{
               height:'40px'
           }
@@ -71,21 +71,21 @@ const Navbar = () => {
               
               <Typography sx={{fontFamily:"'Manrope', sans-serif" ,fontSize:'2.3em',fontStyle:'italic',fontWeight:'bold',alignSelf: 'bottom'
                ,color:'white','@media (max-width:1000px)':{
-                fontSize:'1.3em'
+                fontSize:'1em'
             },
-            '@media (max-width:1000px)':{
-              fontSize:'1em'
-          }
             }}  class='neon'>{detailsTitle}</Typography>
             <Cursor cursorStyle=''>
             
             </Cursor>
-            <Box component='img' src='./yellow-tractor.png' sx={{height:'45px'}}/>
+            <Box component='img' src='./yellow-tractor.png' alt='' sx={{height:'45px'}}/>
           
             </Box>
             
           </Box>
           <div class='navbar-box' id='navbar_box'>
+            <div class='btnX' id='btnX'>
+              <span>×</span>
+            </div>
             <nav>
               <ul>
                 <li>
@@ -106,6 +106,14 @@ const Navbar = () => {
                 </li>
               </ul>
             </nav>
+            <div class='followUs' >
+                <h1>Seguinos en nuestras redes:</h1>
+                <div class='socialMedias'>
+                    <img src='./socialMedias/facebook.png' alt=''/>
+                    <img src='./socialMedias/instagram.png' alt=''/>
+                    <img src='./socialMedias/tiktok.png' alt=''/>
+                </div>
+            </div>
           </div>
           <MenuIcon id = 'menu_icon_button' sx={{color:'orange',display:'none',position:'fixed',cursor:'pointer','@media (max-width:1000px)':{
               display:'flex',mr:2,top:'20px',right:0

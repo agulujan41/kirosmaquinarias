@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@500&display=swap");
-
+body{
+  font-family: 'Manrope',sans-serif;
+}
 .hidden {
   opacity: 0;
   transform: scale(0.9);
@@ -27,7 +29,7 @@ section {
 }
 .neon {
   color: #fff;
-
+  z-index: 150;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #bb4b01, 0 0 15px #e67b00,
     0 0 15px #96660f, 0 0 15px #e69d00, 0 0 15px #e68200;
   font-family: "Manrope", sans-serif;
@@ -43,8 +45,16 @@ section {
   background-color: black;
   margin-right: 30px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.navbar-box .btnX{
+  display:none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  cursor:pointer
 }
 .navbar-box nav {
   align-items: center;
@@ -75,8 +85,15 @@ section {
   display: none;
   color: orange;
 }
+.tractoresContainer{
+  background-image: url("../field_vertical_no_hd.jpg");
+ 
+}
 .empresaSection {
   background-color: black;
+}
+#tractoresCard{
+  text-shadow: none;
 }
 .cardDialog h1 {
   color: orange;
@@ -126,31 +143,35 @@ section {
   justify-content:center;
   gap: 60px;
   flex-wrap: wrap;
+  background-color: transparent;
 }
 
 .container .card {
   margin-top: 30px;
   position: relative;
-  background-color:black;
+  background-color: transparent;
   width: 80%;
   height: 70vh;
+  padding: 10px;
 }
 
 .container .card .face {
   height: 50%;
   width: 100%;
   transition: 0.4s;
+  
 }
 
 .container .card .face.face1 {
   position: relative;
-  background: black;
+  background-color: transparent;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   z-index: 1;
+  
   transform: translateY(50%);
 }
 .container img{
@@ -192,7 +213,7 @@ section {
 
 .container .card .face.face2 {
   position: relative;
-  background: whitesmoke;
+  background: transparent;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -205,6 +226,7 @@ section {
 
 .container .card:hover .face.face2 {
   transform: translateY(0);
+  
 }
 
 .container .card .face.face2 .content p,
@@ -213,7 +235,7 @@ a {
   text-align: center;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: transparent;
 }
 
 .container .card .face.face2 .content a {
@@ -231,20 +253,23 @@ a {
   color: whitesmoke;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+.followUs{
+  display: none;
+}
 @media screen and (max-width: 1000px) {
   .neon {
     font-size: 1.6em;
   }
   .navbar-box {
     position: fixed;
-    top: 60px;
+    top: 0px;
     padding: 10px;
     z-index: 120;
     right: 0px;
     margin-right: 0;
     height: 100vh;
     width: 85%;
-    background-color: rgba(0, 0, 0, 0.884);
+    background-color: rgba(0, 0, 0, 0.925);
     align-items: start;
   }
   .navbar-box ul {
@@ -294,9 +319,12 @@ a {
   .carousel .valtra {
     font-size: 1em;
   }
+  .container{
+    width: 100%;
+  }
   .container .card {
     position: relative;
-    background-color:black;
+    background-color: transparent;
     width: 100%;
     height: 70vh;
   }
@@ -304,7 +332,37 @@ a {
     width: 100%;
     height: auto;
   }
-  
+  .navbar-box .btnX{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-self: flex-end;
+    margin-right: 20px;
+    font-size: 2em;
+  }
+  .followUs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .socialMedias{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    
+  }
+  .socialMedias img{
+    height: 50px;
+    cursor: pointer;
+  }
+  .followUs h1{
+    color:white;
+    font-size: 1em;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 500px){
   .neon {
@@ -313,6 +371,16 @@ a {
   .card{
     width: 100%;
     height: 90vh;
+  }
+  .card .face{
+    width: 90%;
+  }
+  .container{
+    width: 100%;
+  }
+  .card img{
+    width: 100%;
+    height: auto;
   }
   .container .card .face.face2 .content p,
   a {
