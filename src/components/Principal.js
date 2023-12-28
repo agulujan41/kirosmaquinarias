@@ -32,7 +32,7 @@ const Principal = () => {
         <div className='tractoresContainer'>
         <Box sx={{mr:11,ml:11,
           '@media (max-width:1000px)':{
-            p:2
+            mr:0,ml:0
           }}}>
           
           <div className='cardDialog' id='tractoresCard'>

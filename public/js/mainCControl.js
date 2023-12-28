@@ -47,6 +47,7 @@ function loadMENU(){
     if (window.innerWidth<1000){
         menuActivated = false;
         navbar_box.style = 'display:none';
+        
     }
     else{
         navbar_box.style = 'display:flex;'
@@ -68,3 +69,19 @@ function onClickedButton(){
         navbar_box.style = 'display:none';
     }
 }
+
+var lis = document.getElementsByTagName("li");
+for (let i=0;i<lis.length;i++){
+    lis[i].onclick = function(){
+        if (window.innerWidth <1000){
+            menuActivated = false;
+            navbar_box.style = 'display:none';
+            var a = lis[i].getElementsByTagName("a");
+            a[0].click();
+        }
+       
+        
+    }
+
+}
+

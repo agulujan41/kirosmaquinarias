@@ -5,7 +5,7 @@ const Feet = () => {
   return (
     <>
       <div className='feet'>
-
+          
       </div>
     </>
   )

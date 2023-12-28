@@ -87,6 +87,7 @@ section {
 }
 .tractoresContainer{
   background-image: url("../field_vertical_no_hd.jpg");
+  width: 100%;
  
 }
 .empresaSection {
@@ -94,7 +95,9 @@ section {
 }
 #tractoresCard{
   text-shadow: none;
+  width: 100%;
 }
+
 .cardDialog h1 {
   color: orange;
   text-shadow: 0 0 42px orange, 0 0 82px orange, 0 0 92px orange,
@@ -118,7 +121,7 @@ section {
 .cardDialog {
   padding: 10px;
   border-radius: 9px;
- 
+  width: 100%;
 }
 .empresaSection img {
   filter: saturate(20%);
@@ -267,7 +270,7 @@ a {
     right: 0px;
     margin-right: 0;
     height: 100vh;
-    width: 85%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.925);
     align-items: start;
   }
@@ -299,6 +302,7 @@ a {
   .navbar-box li {
     border-bottom: 1px solid orange;
     width: 100%;
+    cursor: pointer;
   }
   .cardDialog h1 {
     font-size: 1.5em;
@@ -307,11 +311,11 @@ a {
     font-size: 1em;
   }
   .carousel {
-    height: 90vh;
+    height: 100vh;
 
   }
   .carousel img{
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
 
   }
