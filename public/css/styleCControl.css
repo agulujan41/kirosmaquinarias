@@ -118,8 +118,7 @@ section {
 .cardDialog {
   padding: 10px;
   border-radius: 9px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+ 
 }
 .empresaSection img {
   filter: saturate(20%);

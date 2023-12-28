@@ -73,7 +73,7 @@ const Navbar = () => {
                ,color:'white','@media (max-width:1000px)':{
                 fontSize:'1em'
             },
-            }}  class='neon'>{detailsTitle}</Typography>
+            }}  className='neon'>{detailsTitle}</Typography>
             <Cursor cursorStyle=''>
             
             </Cursor>
@@ -82,8 +82,8 @@ const Navbar = () => {
             </Box>
             
           </Box>
-          <div class='navbar-box' id='navbar_box'>
-            <div class='btnX' id='btnX'>
+          <div className='navbar-box' id='navbar_box'>
+            <div className='btnX' id='btnX'>
               <span>×</span>
             </div>
             <nav>
@@ -106,12 +106,20 @@ const Navbar = () => {
                 </li>
               </ul>
             </nav>
-            <div class='followUs' >
+            <div className='followUs' >
                 <h1>Seguinos en nuestras redes:</h1>
-                <div class='socialMedias'>
+                <div className='socialMedias'>
+                    <a href='https://www.facebook.com/valtrahispano/?locale=es_LA'>
                     <img src='./socialMedias/facebook.png' alt=''/>
+                    </a>
+                    <a href='https://www.instagram.com/valtrahispano/'>
                     <img src='./socialMedias/instagram.png' alt=''/>
+                    </a>
+                    <a href='https://www.tiktok.com/discover/tractor-valtra'>
                     <img src='./socialMedias/tiktok.png' alt=''/>
+                    </a>
+                    
+                    
                 </div>
             </div>
           </div>
