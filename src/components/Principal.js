@@ -5,6 +5,7 @@ import Navbar from "./utils/Navbar";
 import CardsTractores from "./utils/CardsTractores";
 import Contact from "./utils/Contact";
 import Feet from "./utils/Feet";
+import ChatBot from "./utils/ChatBot";
 const Principal = () => {
   return (
     <>
@@ -110,6 +111,7 @@ const Principal = () => {
       <section id="feet">
         <Feet />
       </section>
+      <ChatBot/>
     </>
   );
 };
