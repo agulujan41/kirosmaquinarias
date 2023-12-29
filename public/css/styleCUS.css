@@ -1,0 +1,116 @@
+.contactUsContainer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    font-size: 1.5em;
+    width: 100%;
+    color:white;
+}
+.contactUsContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+
+}
+.mapInfo{
+    width: 100%;
+}
+.mapInfo h1{
+    color:orangered;
+    text-shadow: 0 0 5px orangered, 0 0 10px orangered, 0 0 15px orangered,
+    0 0 15px #96660f;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.map{
+    width: 100%;
+}
+.map iframe{
+    width: 100%;
+    height: auto;
+    
+}
+.contactUsContainer #btnEnviar{
+    width: 30%;
+    border: none;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #bb4b01, 0 0 15px #e67b00,
+    0 0 15px #96660f, 0 0 15px #e69d00, 0 0 15px #e68200;
+    border-radius: 10px;
+    align-self: center;
+    margin-top: 40px;
+    padding: 5px;
+} 
+.contactUsContainer .entrada{
+
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid orange;
+    outline: none;
+    color:white;
+}
+#consultaCB{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid orangered;
+}
+#consultaCB option{
+    font-size: 0.9em;
+}
+.feet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: rgba(56, 54, 54, 0.541);
+}
+.feet .followUs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.feet .followUs .socialMedias{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.feet .followUs .socialMedias img{
+    height: 60px;
+    cursor: pointer;
+}
+.feet h1,h2{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+.feet .followUs h1{
+    color:white;
+    font-size: 1em;
+    text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    .contactUsContainer form{
+        
+        width: 90%;
+    
+    }
+    .feet .followUs .socialMedias img{
+        height: 50px;
+        
+    }
+}

@@ -85,3 +85,16 @@ for (let i=0;i<lis.length;i++){
 
 }
 
+cards = document.getElementsByClassName("card");
+for (let i=0;i<cards.length;i++){
+    let p = cards[i].getElementsByTagName("p");
+    let a = cards[i].getElementsByTagName("a");
+    cards[i].onmouseover=function(){
+        p[0].style = 'color:white;'
+        a[0].style = 'color:white;outline: 1px dashed white;'
+    }
+    cards[i].onmouseleave=function(){
+        p[0].style = 'color:transparent;'
+        a[0].style = 'color:transparent;outline: 1px dashed transparent;'
+    }
+}

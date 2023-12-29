@@ -7,8 +7,9 @@ const CardsTractores = () => {
         <div className="card">
           <div className="face face1">
             <div className="content">
-              <img src='./maquinarias/without-background/s324.png' alt=""/>
               <h3>S324</h3>
+              <img src='./maquinarias/without-background/s324.png' alt=""/>
+              
             </div>
           </div>
           <div className="face face2">
@@ -27,8 +28,9 @@ const CardsTractores = () => {
         <div className="card">
           <div className="face face1">
             <div className="content">
+            <h3>BH194</h3>
             <img src='./maquinarias/without-background/bh194.png' alt=""/>
-              <h3>BH194</h3>
+              
             </div>
           </div>
           <div className="face face2">
@@ -47,8 +49,9 @@ const CardsTractores = () => {
         <div className="card">
           <div className="face face1">
             <div className="content">
+            <h3>A114</h3>
             <img src='./maquinarias/without-background/a114.png' alt=""/>
-              <h3>A14</h3>
+              
             </div>
           </div>
           <div className="face face2">

@@ -86,7 +86,8 @@ section {
   color: orange;
 }
 .tractoresContainer{
-  background-image: url("../field_vertical_no_hd.jpg");
+  background-image: url("../field.jpg");
+  background-attachment: fixed;
   width: 100%;
  
 }
@@ -242,9 +243,9 @@ a {
 
 .container .card .face.face2 .content a {
   text-decoration: none;
-  color: black;
+  color: transparent;
   box-sizing: border-box;
-  outline: 1px dashed #333;
+  outline: 1px dashed transparent;
  
   margin: 15px 0 0;
   display: inline-block;
@@ -332,7 +333,7 @@ a {
     height: 70vh;
   }
   .container img{
-    width: 100%;
+    width: 80%;
     height: auto;
   }
   .navbar-box .btnX{
@@ -382,7 +383,8 @@ a {
     width: 100%;
   }
   .card img{
-    width: 100%;
+    width: 70%;
+    margin-bottom: 10%;
     height: auto;
   }
   .container .card .face.face2 .content p,
