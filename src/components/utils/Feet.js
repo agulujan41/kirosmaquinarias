@@ -74,6 +74,9 @@ const Feet = () => {
                     <a href='https://www.tiktok.com/discover/tractor-valtra'>
                     <img src='./socialMedias/tiktok.png' alt=''/>
                     </a>
+                    <a href='https://www.tiktok.com/discover/tractor-valtra'>
+                    <img src='./socialMedias/linkedin.png' alt=''/>
+                    </a>
                     
                     
                 </div>

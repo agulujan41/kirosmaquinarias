@@ -3,11 +3,11 @@ import React from 'react'
 const WhatsappChatBot = () => {
   return (
     <>
-     <button className="chatbot-toggler">
-      <span className="material-symbols-rounded">mode_comment</span>
+     <button className="chatbot-toggler" id="whatsappToggler">
+      <span className="material-symbols-rounded">Call</span>
       <span className="material-symbols-outlined">close</span>
     </button>
-    <div className="chatbot">
+    <div className="chatbot" id='chatbotWhatsapp'>
       <header>
         <h2>Chatbot</h2>
         <span className="close-btn material-symbols-outlined">close</span>

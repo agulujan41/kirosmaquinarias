@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@500&display=swap');
 body{
-  font-family: 'Manrope',sans-serif;
+
+  font-family: 'Bebas Neue', sans-serif;
 }
 .hidden {
   opacity: 0;
@@ -29,10 +31,10 @@ section {
 }
 .neon {
   color: #fff;
-  z-index: 150;
+  z-index: 170;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #bb4b01, 0 0 15px #e67b00,
     0 0 15px #96660f, 0 0 15px #e69d00, 0 0 15px #e68200;
-  font-family: "Manrope", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-size: 2.3em;
   font-weight: bold;
@@ -51,8 +53,10 @@ section {
 }
 .navbar-box .btnX{
   display:none;
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin-top: -25px;
+  margin-bottom: 30px;
+  padding: 0;
+  height: min-content;
   font-size: 1.6em;
   cursor:pointer
 }
@@ -66,27 +70,32 @@ section {
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 30px;
   justify-content: space-between;
 }
 .navbar-box li {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
+  align-items: center;
 }
 .navbar-box a {
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-decoration: none;
   color: white;
-  font-family: "Manrope", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
-.navbar-box span {
+
+.lfMenu{
   display: none;
   color: orange;
 }
+.navbar-box span{
+  font-size: 2em;
+}
 .tractoresContainer{
-  background-image: url("../field.jpg");
+  background-image: url("../grass.jpg");
   background-attachment: fixed;
   width: 100%;
  
@@ -103,7 +112,7 @@ section {
   color: orange;
   text-shadow: 0 0 42px orange, 0 0 82px orange, 0 0 92px orange,
     0 0 102px orange, 0 0 151px orange;
-  font-family: "Manrope", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 2em;
@@ -113,11 +122,11 @@ section {
 }
 .empresaSection p {
   color: rgb(212, 212, 212);
-  font-family: "Manrope", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 1.6em;
   text-align: justify;
   filter: blur(0px);
-  font-style: italic;
+  font-style: normal;
 }
 .cardDialog {
   padding: 10px;
@@ -259,15 +268,25 @@ a {
 .followUs{
   display: none;
 }
+.rpMenu{
+  display: flex;
+  color:white;
+ 
+}
+.lpMenu{
+  color:orange;
+  display: none;
+  
+}
 @media screen and (max-width: 1000px) {
   .neon {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
   .navbar-box {
     position: fixed;
     top: 0px;
     padding: 10px;
-    z-index: 120;
+    z-index: 160;
     right: 0px;
     margin-right: 0;
     height: 100vh;
@@ -288,11 +307,14 @@ a {
   }
   .navbar-box a {
     text-transform: capitalize;
-    font-size: 1.5em;
+    font-size: 2em;
   }
-  .navbar-box span {
+  .rpMenu{
+    display: none;
+    
+  }
+  .lpMenu{
     display: flex;
-    font-size: 1.2em;
   }
 
   .navbar-box nav {
@@ -309,7 +331,7 @@ a {
     font-size: 1.5em;
   }
   .empresaSection p {
-    font-size: 1em;
+    font-size: 1.3em;
   }
   .carousel {
     height: 100vh;
@@ -337,12 +359,18 @@ a {
     height: auto;
   }
   .navbar-box .btnX{
+    color: orange;
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-self: flex-end;
     margin-right: 20px;
     font-size: 2em;
+    padding: 0;
+    height: min-content;
+  }
+  .btnX span{
+    height: fit-content;
   }
   .followUs{
     display: flex;
@@ -364,13 +392,13 @@ a {
   }
   .followUs h1{
     color:white;
-    font-size: 1em;
+    font-size: 1.3em;
     text-align: center;
   }
 }
 @media screen and (max-width: 500px){
   .neon {
-    font-size: 1em;
+    font-size: 1.6em;
   }
   .card{
     width: 100%;
@@ -394,7 +422,7 @@ a {
 }
 @media screen and (max-width: 300px){
   .neon {
-    font-size: 1em;
+    font-size: 1.4em;
   }
 }
 @media (orientation: landscape) {

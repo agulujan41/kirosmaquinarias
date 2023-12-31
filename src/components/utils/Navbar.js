@@ -39,7 +39,7 @@ const Navbar = () => {
       }} id="navbar" >
           
           <Box sx={{display:'flex',flexDirection:'row',gap:'15px',alignItems:'center'}}> 
-            <Box component="img" src="./logo-orange.jpg" alt='' sx={{height:'60px',
+            <Box component="img" src="./logo-orange.jpg" alt='' sx={{height:'60px',zIndex:170,
             '@media (max-width:1000px)':{
               height:'40px'
           }
@@ -57,8 +57,8 @@ const Navbar = () => {
             }
               
             }}>
-              <Typography sx={{fontFamily:"'Manrope', sans-serif" ,fontSize:'3.2em',fontWeight:'bold',fontStyle:'italic',alignSelf: 'bottom'
-              ,color:'orange',zIndex:150,'@media (max-width:1000px)':{
+              <Typography sx={{fontFamily:"'Bebas Neue', sans-serif" ,fontSize:'3.2em',fontWeight:'bold',fontStyle:'italic',alignSelf: 'bottom'
+              ,color:'orange',zIndex:170,'@media (max-width:1000px)':{
                 fontSize:'1.5em'
 
             },
@@ -69,7 +69,7 @@ const Navbar = () => {
 
             }}>KIRO</Typography>
               
-              <Typography sx={{fontFamily:"'Manrope', sans-serif" ,fontSize:'2.3em',fontStyle:'italic',fontWeight:'bold',alignSelf: 'bottom'
+              <Typography sx={{fontFamily:"'Bebas Neue', sans-serif" ,fontSize:'2.3em',fontStyle:'italic',fontWeight:'bold',alignSelf: 'bottom'
                ,color:'white','@media (max-width:1000px)':{
                 fontSize:'1em'
             },
@@ -77,7 +77,7 @@ const Navbar = () => {
             <Cursor cursorStyle=''>
             
             </Cursor>
-            <Box component='img' src='./yellow-tractor.png' alt='' sx={{height:'45px'}}/>
+            <Box component='img' src='./yellow-tractor.png' alt='' sx={{height:'45px',zIndex:170}}/>
           
             </Box>
             
@@ -89,20 +89,24 @@ const Navbar = () => {
             <nav>
               <ul>
                 <li>
-                  <span>></span>
+                  <span className="material-symbols-outlined lpMenu">navigate_next</span>
                   <a href='#main_section'>Inicio</a>
+                  <span className="material-symbols-outlined rpMenu">expand_more</span>
                 </li>
                 <li>
-                  <span>></span>
-                  <a href='#tractores'>Tractores</a>
+                  <span className="material-symbols-outlined lpMenu">navigate_next</span>
+                  <a href='#tractores'>Productos</a>
+                  <span className="material-symbols-outlined rpMenu">expand_more</span>
                 </li>
                 <li>
-                  <span>></span>
+                  <span className="material-symbols-outlined lpMenu">navigate_next</span>
                   <a href='#empresa'>Empresa</a>
+                  <span className="material-symbols-outlined rpMenu">expand_more</span>
                 </li>
                 <li>
-                  <span>></span>
+                  <span className="material-symbols-outlined lpMenu">navigate_next</span>
                   <a href='#contacto'>Contactanos</a>
+                  <span className="material-symbols-outlined rpMenu">expand_more</span>
                 </li>
               </ul>
             </nav>
@@ -118,13 +122,15 @@ const Navbar = () => {
                     <a href='https://www.tiktok.com/discover/tractor-valtra'>
                     <img src='./socialMedias/tiktok.png' alt=''/>
                     </a>
-                    
+                    <a href='https://www.tiktok.com/discover/tractor-valtra'>
+                    <img src='./socialMedias/linkedin.png' alt=''/>
+                    </a>
                     
                 </div>
             </div>
           </div>
           <MenuIcon id = 'menu_icon_button' sx={{color:'orange',display:'none',position:'fixed',cursor:'pointer','@media (max-width:1000px)':{
-              display:'flex',mr:2,top:'20px',right:0
+              display:'flex',mr:2,top:'10px',right:0,height:'40px'
           }}}/>
           
       </Box>
