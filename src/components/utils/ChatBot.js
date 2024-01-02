@@ -15,11 +15,11 @@ const ChatBot = () => {
       <ul className="chatbox">
         <li className="chat incoming">
           <span className="material-symbols-outlined">smart_toy</span>
-          <p>Buenas 👋<br/>¿Como puedo ayudarte hoy?</p>
         </li>
+          <p>Buenas <span role='img'>👋<br/></span>¿Como puedo ayudarte hoy?</p>
       </ul>
       <div className="chat-input">
-        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <textarea placeholder="Enter a message..." spellCheck="false" required></textarea>
         <span id="send-btn" className="material-symbols-rounded">send</span>
       </div>
     </div>

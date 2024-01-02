@@ -1,5 +1,5 @@
-const chatbotToggler = document.querySelector(".chatbot-toggler");
-const closeBtn = document.querySelector(".close-btn");
+const chatbotToggler = document.querySelectorAll(".chatbot-toggler");
+const closeBtn = document.querySelectorAll(".close-btn");
 const chatbox = document.querySelector(".chatbox");
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
@@ -40,7 +40,7 @@ const generateResponse = (chatElement) => {
         messageElement.textContent = data.choices[0].message.content.trim();
     }).catch(() => {
         messageElement.classList.add("error");
-        messageElement.textContent = "Oops! Something went wrong. Please try again.";
+        messageElement.textContent = "Oops! Algo salió mal. Por favor intenta mas tarde.";
     }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
@@ -80,6 +80,12 @@ chatInput.addEventListener("keydown", (e) => {
     }
 });
 
+
 sendChatBtn.addEventListener("click", handleChat);
-closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
-chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+
+for (let i = 0 ;i< closeBtn.length;i++){
+    closeBtn[i].addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+    chatbotToggler[i].addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+}
+
+

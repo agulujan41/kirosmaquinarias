@@ -69,9 +69,9 @@ const Principal = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.362656080501!2d-65.42566!3d-24.8172686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc31d0757fc63%3A0x6314503d37c4baf1!2sAv.%20Paraguay%202200%2C%20Salta!5e0!3m2!1ses-419!2sar!4v1703822930393!5m2!1ses-419!2sar"
                 width="600"
                 height="450"
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
@@ -82,7 +82,6 @@ const Principal = () => {
         <Feet />
       </section>
       <ChatBot/>
-      <WhatsappChatBot/>
     </>
   );
 };
